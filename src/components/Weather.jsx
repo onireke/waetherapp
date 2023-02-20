@@ -4,7 +4,7 @@ import Image from "next/image";
 function Weather({ data }) {
   console.log(data);
   return (
-    <div>
+    <div className="weather">
       <div>
         <div>
           <Image
@@ -13,7 +13,9 @@ function Weather({ data }) {
             width="100"
             height="100"
           />
+          <p>{data.weather[0].main}</p>
         </div>
+        <p>{data.main.temp.toFixed(0)}&#176;</p>
       </div>
     </div>
   );
