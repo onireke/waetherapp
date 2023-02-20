@@ -5,6 +5,7 @@ function Weather({ data }) {
   console.log(data);
   return (
     <div className="weather">
+      {/* Top */}
       <div className="top">
         <div className="top-inner">
           <Image
@@ -16,6 +17,12 @@ function Weather({ data }) {
           <p className="weather-first">{data.weather[0].main}</p>
         </div>
         <p className="temp">{data.main.temp.toFixed(0)}&#176;</p>
+      </div>
+
+      {/* Bottom */}
+
+      <div className="bottom">
+        <p className="city-name">Weather in {data.name}</p>
       </div>
     </div>
   );
