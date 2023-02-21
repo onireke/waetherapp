@@ -23,20 +23,20 @@ function Weather({ data }) {
 
       <div className="bottom">
         <p className="city-name">Weather in {data.name}</p>
-        <div>
+        <div className="parameters">
           <div>
-            <p>{data.main.feels_like.toFixed(0)}&#176;</p>
-            <p>Feels Like</p>
+            <p className="param">{data.main.feels_like.toFixed(0)}&#176;</p>
+            <p className="param-name">Feels Like</p>
           </div>
 
           <div>
-            <p>{data.main.humidty}%</p>
-            <p>Humidity</p>
+            <p className="param">{data.main.pressure} Pa</p>
+            <p className="param-name">Pressure</p>
           </div>
 
           <div>
-            <p>{data.wind.speed.toFixed(0)} MPH</p>
-            <p>Winds</p>
+            <p className="param">{data.wind.speed.toFixed(0)} MPH</p>
+            <p className="param-name">Winds</p>
           </div>
         </div>
       </div>

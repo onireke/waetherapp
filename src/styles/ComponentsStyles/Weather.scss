@@ -15,4 +15,24 @@
       @apply text-9xl;
     }
   }
+
+  .bottom {
+    @apply bg-black/60 relative rounded-lg p-[2.2rem];
+
+    .city-name {
+      @apply text-center p-[1.4rem] text-[1.5rem];
+    }
+
+    .parameters {
+      @apply flex justify-between text-center;
+
+      .param {
+        @apply font-bold text-[1.5rem];
+      }
+
+      .param-name {
+        @apply text-[1.25rem];
+      }
+    }
+  }
 }
